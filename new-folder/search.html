@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Research Hub - Advanced Google Search</title>
+</head>
+<body>
+  <h1> Movie Research Hub</h1>
+  <form action="https://www.google.com/search" method="get">
+    
+    <label for="keywords">Search Keywords:</label>
+    <input type="text" id="keywords" name="q" placeholder="e.g. Oppenheimer review"><br><br>
+
+    <label for="site">Search only on:</label>
+    <select id="site" name="q">
+      <option value="site:imdb.com">IMDb</option>
+      <option value="site:rottentomatoes.com">Rotten Tomatoes</option>
+      <option value="site:variety.com">Variety</option>
+    </select><br><br>
+
+    <label>Search Type:</label><br>
+    <input type="radio" id="title" name="q" value="intitle:review">
+    <label for="title">Page titles with 'review'</label><br>
+    <input type="radio" id="url" name="q" value="inurl:trailer">
+    <label for="url">URLs with 'trailer'</label><br><br>
+
+    <label>Extra Filters:</label><br>
+    <input type="checkbox" id="blog" name="q" value="inurl:blog">
+    <label for="blog">Include blogs</label><br>
+    <input type="checkbox" id="bts" name="q" value="inurl:behind-the-scenes">
+    <label for="bts">Behind the scenes</label><br><br>
+
+    <label for="notes">Optional Notes (not used in search):</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="40" placeholder="What are you researching?"></textarea><br><br>
+
+    <button type="submit">Search on Google </button>
+  </form>
+</body>
+</html>
