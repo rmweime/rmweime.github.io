@@ -2,35 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2048 Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Play 2048 - Embedded App</title>
   <link rel="stylesheet" href="css/application.css" />
 </head>
 <body>
 
-  <h1>Play the Classic 2048 Game</h1>
+  <h1>Play 2048</h1>
 
-  <h2>Game Overview</h2>
-  <p>2048 is a fun and addictive puzzle game where the objective is to slide numbered tiles on a grid to combine them and create a tile with the number 2048.</p>
+  <h2>What is 2048?</h2>
+  <p>2048 is a simple but addictive puzzle game where you use arrow keys to merge numbered tiles until you reach the number 2048. It's perfect for quick mental workouts and surprisingly strategic.</p>
 
   <h2>How to Play</h2>
-  <p>Use the arrow keys (or swipe on mobile) to move the tiles. When two tiles with the same number touch, they merge into one. The game ends when there are no more valid moves left!</p>
+  <p>Use your arrow keys to slide the numbered tiles. When two tiles with the same number touch, they merge into one. Keep combining them to reach the elusive 2048 tile!</p>
 
-  <!-- Embedded Web App -->
-  <iframe src="https://play2048.co/" width="100%" height="500" title="2048 Game" frameborder="0"></iframe>
-
-  <!-- Images -->
-  <img src="images/2048-start.png" alt="Starting grid of 2048" width="300">
-  <img src="images/2048-mid.png" alt="Mid-game of 2048 showing tile merging" width="300">
-  <img src="images/2048-win.png" alt="Winning screen of 2048" width="300">
-
-  <!-- Instructions in List Format -->
   <ul>
-    <li>Use your arrow keys to move tiles.</li>
-    <li>Combine matching numbers.</li>
-    <li>Reach the 2048 tile to win.</li>
-    <li>Keep going to beat your high score!</li>
+    <li>Arrow keys control movement (Up, Down, Left, Right)</li>
+    <li>Each move adds a new tile to the board</li>
+    <li>The game ends when no moves are left</li>
   </ul>
+
+  <iframe src="https://play2048.co/" width="100%" height="500px" title="2048 Game" style="border: none;"></iframe>
+
+  <h2>Game Visuals</h2>
+  <img src="https://play2048.co/meta/apple-touch-icon.png" alt="2048 Icon" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/2048_game_screenshot.png" alt="Gameplay Example 1" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/2048_Game_Logo.svg" alt="2048 Logo" />
+
+  <table>
+    <caption>Game Tile Combinations</caption>
+    <thead>
+      <tr>
+        <th>Tile</th>
+        <th>Created From</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4</td>
+        <td>2 + 2</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>4 + 4</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>8 + 8</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
+
